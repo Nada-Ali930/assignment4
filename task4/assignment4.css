@@ -1,0 +1,556 @@
+/* -----------General --------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clr{
+    clear: both;
+}
+.container{
+    margin: auto;
+    width: 80%;
+}
+/*------------------ header ---------------------------------------*/
+.header{
+    background-image: url(../imeges/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-color: rgba(0,0,0,.9);
+    position: relative;
+}
+.logo a{
+    font-size: 24px;
+    color:rgb(255, 48, 91);
+    font-weight:800;
+    vertical-align: middle;
+    margin-left: 100px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.nav-bar{
+    padding-top: 20px;
+    position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #333333;
+}
+.logo{
+    float: left;
+    margin-left: 100px;
+}
+.nav-links{
+    float: right;
+    margin-right: 300px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size:16px;
+    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.nav-links li,nav li{
+    float: left;
+    padding-right: 20px;
+
+}
+.alex-smith{
+    z-index: 99;
+    text-align: center;
+    position: absolute;
+    top: 300px;
+    left:600px;
+    font-family:"Source Sans Pro",sans-serif; 
+}
+.alex-smith h3{
+    padding-bottom:12px ;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+.alex-smith h1{
+    color:#FF305B;
+    font-size: 70px;
+    font-weight: 700;
+    padding-bottom:12px ;
+}
+.alex-smith p{
+    color: white;
+    font-size: 26px;
+    font-weight: 300;
+}
+.header-overlay{
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.header a:hover{
+    color: #FF305B;
+}
+.header a{
+    transition: color 1s;
+}
+/*-------------------Hello ------------------------------------------------------*/
+.hello{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.hello-left-border{
+    width: 360px;
+    height: 440px;
+    border: rgb(85, 85, 85) solid 6px;
+    border-radius: 5px;
+    position: relative;
+    margin-left: 170px;
+}
+.hello-left img{
+    width:360px; 
+}
+.child-imege{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    overflow: hidden;
+}
+.child-imege:hover .hello-overlay{
+    top:0;
+    opacity: 1;
+}
+.hello-overlay{
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: top 1s;
+
+}
+.hello-overlay a{
+    padding: 10px;
+    transition: color 1s;
+}
+.hello-overlay a:hover{
+    color: #FF305B;
+}
+
+.brands{
+   position: absolute;
+   top:200px;
+   left: 100px;
+}
+
+.herozintal-line{
+    position: relative;
+}
+.herozintal-line::after{
+  content: '';
+  top:155px;
+  left:0;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  border-bottom: 1px dashed #7E7E7E;  
+}
+.hello-left{
+    float: left;
+    width: 50%;
+}
+.hello-right{
+   float: left;
+   width: 50%;
+}
+.list1,.list2{
+   float: left;
+}
+.list1{
+    margin-right: 60px;
+}
+.list p{
+   margin:20px 0px;
+}
+.btn1{
+    background-color: #FF305B;
+    padding: 10px 20px;
+    width: fit-content;
+    margin-right: 30px;
+    border-radius: 3px;
+    transition: background-color 1s;
+}
+.btn2{
+    background-color: #FF305B;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 3px;
+    transition: background-color 1s;
+}
+.btn1:hover,.btn2:hover,.contact-us
+button:hover{
+    background-color: red;
+}
+.hello-right h2::first-letter{
+   color: #FF305B;
+}
+.hello-right h2{
+    font-size: 34px;
+    font-weight: 600;
+    font-family:"Source Sans Pro",sans-serif; 
+    padding-bottom: 20px;
+}
+.hello-right p{
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 6px;
+    line-height: 1.5rem;
+
+}
+.list span{
+    color: black;
+}
+
+/*---------------- Our Services --------------------------------------------------*/
+.our-services{
+    background-color:#F1F1F1;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.box{
+width: fit-content;
+margin: auto;
+padding-bottom: 40px;
+}
+.box h2{
+    color:#333333;
+    font-size: 40px;
+    font-weight: 600;
+    font-family:"Source Sans Pro",sans-serif;
+}
+.box1{
+    width: 80px;
+    height: 7px;
+    border-bottom: #FF305B solid 1px;
+    margin-left: 85px;
+}
+.box2{
+    width: 160px;
+    height: 7px;
+    border-bottom: #FF305B solid 1px;
+    margin-left: 55px;
+}
+.box3{
+    width: 80px;
+    height: 7px;
+    border-bottom: #FF305B solid 1px;
+    margin-left: 85px;
+}
+.our-services-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 40px;
+    transition: background-color 1s;
+}
+.our-services-item:hover{
+    background-color: white;
+}
+.our-services-item:hover i {
+   transform: scale(1.2);
+}
+.our-services-item i{
+    color: #FF305B;
+    font-size: xx-large;
+    padding-bottom: 20px;
+    transition: transform 1s .2s;
+}
+.our-services-item h2{
+    font-size:24px;
+    font-weight: 600;
+    font-family: "Source Sans Pro",sans-serif;
+    padding-bottom: 20px;
+}
+.our-services-item p{
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:"Roboto",sans-serif;
+    padding: 2px 0px;
+}
+/*--------------Our Portfolio------------------------------------------------------*/
+.our-portfolio{
+    margin-top: 100px;
+}
+nav a{
+    color:#333333;
+}
+nav{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#pink{
+    color: #FF305B;
+}
+.port-item{
+    width: 33.333%;
+    float: left;
+    padding: 20px;
+}
+.port-item img{
+    width: 100%;
+}
+.port-item .inner{
+    position: relative;
+}
+.port-overlay{
+    background-color:rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.port-overlay i{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color:#FF305B;
+}
+.port-item .inner:hover .port-overlay{
+   opacity: 1;
+}
+
+/*---------------Statistics---------------------------------------------------------*/
+.statistics{
+    background-color:#F1F1F1 ;
+    padding: 100px 0px;
+    margin-top: 100px;
+    text-align: center;
+}
+.stat-icon i{
+    color: #FF305B;
+    font-size: 26px;
+    padding-bottom:20px ;
+}
+.stat-icon h3{
+    font-size: 26px;
+    font-weight: 800;
+    padding-bottom:20px ;
+}
+.stat-icon p{
+    font-size:16px;
+    font-weight: 600;
+    color: #555555;
+    font-family: "Source Sans Pro",sans-serif;
+}
+.stat-icon{
+    float:left;
+    width: 25%;
+}
+/* --------------Client's Feedback--------- */
+.Clients-Feedback box{
+    margin-bottom: 50px;
+}
+.Clients-Feedback{
+    margin-top: 100px;
+}
+.AlexUnder-box{
+    width:800px;
+    height: 270px;
+    margin: auto;
+    background-color:#F1F1F1;
+    margin-bottom: 100px;
+    position: relative;
+}
+.traiangle{
+    width: 150px;
+    height: 150px;
+    border-top: #FF305B 100px solid;
+    border-bottom:  transparent 100px solid;
+    border-right:transparent 100px solid;
+    border-left:#FF305B 100px solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.AlexUnder-box-left img{
+    width:110px;
+    position: absolute;
+    border-radius: 50%;
+   z-index: 99;
+   top: 60px;
+   left: 30px;
+
+}
+.AlexUnder-box-right h3{
+    color: #333333;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: "Source Sans Pro",sans-serif; 
+    padding-bottom: 5px;
+}
+.AlexUnder-box-right h5{
+    color: #777777;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Source Sans Pro",sans-serif; 
+    padding-bottom: 5px;
+}
+.AlexUnder-box-right p{
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Source Sans Pro",sans-serif; 
+    font-style: italic;
+    line-height:1.5rem ;
+}
+.stars i{
+    color: #F1C30D;
+    padding-top: 20px;
+}
+.AlexUnder-box-left{
+    float: left;
+    width: 25%;
+}
+.AlexUnder-box-right{
+    float:right;
+    width:75%;
+    margin-top: 50px;
+}
+/*----------------Our Blog-------------------------------------------------------*/
+.our-blog{
+    background-color:#F1F1F1;
+    padding: 100px 0px;
+}
+.blog-item{
+    float: left;
+    width: 33.333%;
+    padding-left: 40px;
+}
+.blog-item img{
+    width: 100%;
+    cursor: pointer;
+}
+.blog-item .inner{
+    background-color: white;
+}
+ .blog-item iframe{
+    width: 100%;
+    height: 215px;
+}
+.blog-item p{
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:"Roboto",sans-serif; 
+    line-height: 1.3rem;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.blog-item h4{
+    color: #333333;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Source Sans Pro",sans-serif;
+    padding: 1rem 0rem;
+    padding-left: 10px;
+    transition: color 1s;
+}
+.blog-item h5{
+    color:  #333333;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:"Roboto",sans-serif; 
+    padding-left: 10px;
+    padding-top: 10px;
+    transition: color 1s;
+}
+.blog-item h4:hover,.blog-item h5:hover{
+    color: #FF305B;
+}
+/*-----------------Contact Us-----------------------------------------------------*/
+.contact-us{
+    margin: 100px 0px;
+}
+form button{
+    color: white;
+    background-color: #FF305B;
+    padding:10px 20px;
+    border: transparent 1px solid;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: background-color 1s;
+}
+form{
+    margin: auto;
+    width: fit-content;
+}
+#subject,#message,button{
+    display:block;
+}
+#name,#email{
+    padding: 10px 0px;
+    width: 25rem;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#name{
+    margin-right: 30px;
+}
+#subject{
+    padding: 10px 0px; 
+    width: 52.1rem;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+#message{
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+/*-----------Footer------------------------------------------------------------*/
+.footer{
+    background-color:#333333;
+    height:200px;
+    width:100%;
+    text-align: center;
+}
+.footer-logo{
+    width: fit-content;
+    margin: auto;
+    padding-top: 60px;
+}
+.footer-logo a{
+    padding-left: 20px;
+    transition: color 1s;
+}
+.footer-logo a:hover{
+    color: #FF305B;
+}
+.footer-logo p{
+    color: white;
+    padding-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:"Roboto",sans-serif;
+} 
+#foot{
+    color: #FF305B;
+    padding-left: 1px;
+}
+#foot:hover{
+    text-decoration: underline;
+}
